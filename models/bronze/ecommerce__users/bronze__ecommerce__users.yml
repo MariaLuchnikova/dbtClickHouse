@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: bronze__ecommerce__users
+    description: >
+      Bronze layer. Ecommerce users.
+
+    columns:
+      - name: id
+        description: Unique user identifier
+        tests:
+          - not_null
+          - unique
+
+      - name: first_name
+        description: First name
+
+      - name: last_name
+        description: Last name
+
+      - name: email
+        description: Email
+
+      - name: gender
+        description: Gender
+
+      - name: country
+        description: Country of residence
+
+      - name: created_at
+        description: User registration date and time
+
+      - name: _loaded_at
+        description: Date and time of loading into bronze layer

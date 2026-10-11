@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: silver__ecommerce__dict_country_city
+    description: >
+      Silver layer. Ecommerce dictionary for countries and cities.
+
+    columns:
+      - name: country
+        description: Name of country
+        tests:
+          - not_null
+          - unique
+
+      - name: city
+        description: Name of city

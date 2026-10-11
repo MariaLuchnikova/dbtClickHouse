@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: silver__ecommerce__distribution_centers
+    description: >
+      Silver layer. Ecommerce distribution centers.
+
+    columns:
+      - name: id
+        description: Unique identifier for distribution center
+
+      - name: name
+        description: Name of distribution center

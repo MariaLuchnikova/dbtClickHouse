@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: bronze__ecommerce__orders
+    description: >
+      Bronze layer. Ecommerce orders.
+
+    columns:
+      - name: order_id
+        description: Unique order identifier
+        tests:
+          - not_null
+          - unique
+
+      - name: user_id
+        description: Unique user identifier
+
+      - name: status
+        description: Order status
+
+      - name: created_at
+        description: Order placement date and time
+
+      - name: returned_at
+        description: Order return date and time
+
+      - name: shipped_at
+        description: Order shipment date and time
+
+      - name: delivered_at
+        description: Order delivery date and time
+
+      - name: num_of_item
+        description: Number of items in order
+
+      - name: _loaded_at
+        description: Date and time of loading into bronze layer

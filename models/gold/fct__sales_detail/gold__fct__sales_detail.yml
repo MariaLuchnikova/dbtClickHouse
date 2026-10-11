@@ -1,0 +1,121 @@
+version: 2
+
+models:
+  - name: gold__fct__sales_detail
+    description: >
+      Gold layer. Detailed data mart.
+
+    columns:
+      - name: order_item_id
+        description: Unique order item identifier
+
+      - name: order_id
+        description: Unique order identifier
+
+      - name: user_id
+        description: Unique user identifier
+
+      - name: product_id
+        description: Unique product identifier
+
+      - name: order_item_status
+        description: Order item status
+
+      - name: order_item_created_at
+        description: Order item creation date
+
+      - name: order_item_shipped_at
+        description: Order item shipment date
+
+      - name: order_item_delivered_at
+        description: Order item delivery date
+
+      - name: order_item_returned_at
+        description: Order item return date
+
+      - name: sale_price
+        description: Selling price
+
+      - name: delivery_days
+        description: Amount of delivery days
+
+      - name: is_returned
+        description: Return flag
+
+      - name: order_status
+        description: Order status
+
+      - name: order_created_at
+        description: Order creation date
+
+      - name: order_shipped_at
+        description: Order shipment date
+
+      - name: order_delivered_at
+        description: Order delivery date
+
+      - name: order_returned_at
+        description: Order return date
+
+      - name: num_of_item
+        description: Number of items in order
+
+      - name: cost
+        description: Order item cost
+
+      - name: retail_price
+        description: Retail price order item
+
+      - name: profit
+        description: Profit
+
+      - name: category
+        description: Product category
+
+      - name: product_name
+        description: Product name
+
+      - name: brand
+        description: Brand
+
+      - name: department
+        description: Department
+
+      - name: sku
+        description: Sku code
+
+      - name: distribution_center_id
+        description: Distribution center identifier
+
+      - name: distribution_center_name
+        description: Distribution center name
+
+      - name: user_full_name
+        description: User full name
+
+      - name: email
+        description: Email
+
+      - name: age
+        description: Age
+
+      - name: gender
+        description: Gender
+
+      - name: state
+        description: State
+
+      - name: city
+        description: City
+
+      - name: country
+        description: Country
+
+      - name: traffic_source
+        description: Acquisition traffic
+
+      - name: user_created_at
+        description: User record creation date
+
+      - name: _loaded_at
+        description: Date and time of data mart generation

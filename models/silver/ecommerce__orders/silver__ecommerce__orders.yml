@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: silver__ecommerce__orders
+    description: >
+      Silver layer. Ecommerce orders.
+
+    columns:
+      - name: order_id
+        description: Unique order identifier
+
+      - name: user_id
+        description: Unique user identifier
+
+      - name: status
+        description: Order status
+
+      - name: created_at
+        description: Order placement date and time
+
+      - name: returned_at
+        description: Order return date and time
+
+      - name: shipped_at
+        description: Order shipment date and time
+
+      - name: delivered_at
+        description: Order delivery date and time
+
+      - name: num_of_item
+        description: Number of items in order
+
+      - name: delivery_days
+        description: Number of days between shipment and delivery.
+        tests:
+          - min_value:
+              arguments:
+                min_value: 0
+
+      - name: is_returned
+        description: Order return flag
+
+      - name: _loaded_at
+        description: Date and time of loading into silver layer
+
+      - name: _source
+        description: Data source

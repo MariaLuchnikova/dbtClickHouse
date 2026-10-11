@@ -1,0 +1,25 @@
+# Имя нашего профиля
+clickhouse_project:
+  # Активное окружение
+  target: dev
+
+  outputs: # Все доступные окружения
+    dev:
+      # Тип СУБД
+      type: clickhouse
+
+      # База данных для работы dbt
+      schema: default
+
+      # Хост ClickHouse
+      host: localhost
+
+      # HTTP-порт ClickHouse
+      port: 18123
+
+      # Учетные данные
+      user: user
+      password: password
+
+      # Использовать HTTPS
+      secure: false

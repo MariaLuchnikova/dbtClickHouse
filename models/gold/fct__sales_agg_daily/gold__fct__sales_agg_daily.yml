@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: gold__fct__sales_agg_daily
+    description: >
+      Gold layer. Aggregated business metrics data mart.
+
+    columns:
+      - name: sales_date
+        description: Measurement: date of sale
+
+      - name: revenue
+        description: Revenue
+
+      - name: total_cost
+        description: Total cost
+
+      - name: total_profit
+        description: Total profit
+
+      - name: avg_sale_price
+        description: Average selling price per item
+
+      - name: avg_profit
+        description: Average profit per item
+
+      - name: orders_count
+        description: Amount orders
+
+      - name: order_items_count
+        description: Amount order items
+
+      - name: avg_delivery_days
+        description: Average delivery time
+
+      - name: returned_items_count
+        description: Count of returned items
+
+      - name: returned_revenue
+        description: Sum of returned products
+
+      - name: last_order_item_created_at
+        description: Maximum date of the order item
+
+      - name: _loaded_at
+        description: Date and time of data mart generation

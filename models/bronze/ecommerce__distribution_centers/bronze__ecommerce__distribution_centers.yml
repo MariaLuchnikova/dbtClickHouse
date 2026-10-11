@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: bronze__ecommerce__distribution_centers
+    description: >
+      Bronze layer. Ecommerce distribution centers.
+
+    columns:
+      - name: id
+        description: Unique identifier for distribution center
+        tests:
+          - not_null
+          - unique
+
+      - name: name
+        description: Name of distribution center
+
+      - name: _loaded_at
+        description: Date and time of loading into bronze layer

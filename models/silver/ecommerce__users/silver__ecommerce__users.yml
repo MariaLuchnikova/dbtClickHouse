@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: silver__ecommerce__users
+    description: >
+      Silver layer. Ecommerce users.
+
+    columns:
+      - name: id
+        description: Unique user identifier
+
+      - name: full_name
+        description: Full name
+
+      - name: email
+        description: Email
+
+      - name: age
+        description: Age of user
+
+      - name: gender
+        description: Gender
+
+      - name: state
+        description: State/region of residence
+
+      - name: street_address
+        description: Street and house number
+
+      - name: postal_code
+        description: Postal code
+
+      - name: city
+        description: City of residence
+        tests:
+          - no_string_null_values
+
+      - name: country
+        description: Country of residence
+
+      - name: traffic_source
+        description: Traffic source/acquisition channel
+
+      - name: created_at
+        description: User registration date and time
+
+      - name: _loaded_at
+        description: Date and time of loading into silver layer
+
+      - name: _source
+        description: Data source

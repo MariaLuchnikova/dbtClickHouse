@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: ecommerce_raw
+    description: "Raw layer of data warehouse. E-commerce data loaded from Hugging Face files."
+    database: raw
+
+    tables:
+      - name: ecommerce__users
+        description: "Raw layer. Users."
+
+      - name: ecommerce__orders
+        description: "Raw layer. Orders."
+
+      - name: ecommerce__products
+        description: "Raw layer. Products."
+
+      - name: ecommerce__order_items
+        description: "Raw layer. Order items."
+
+      - name: ecommerce__distribution_centers
+        description: "Raw layer. Distribution centers."
